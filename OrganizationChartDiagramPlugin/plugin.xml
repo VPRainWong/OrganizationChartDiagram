@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.organizationPlugin"
+		name="Organization Chart Plugin"
+		description="Sample plugin for generating orginazation chart"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.organizationPlugin.OrgPlugin">
+	
+	<actionSets>
+  		<actionSet id="com.vp.plugin.sample.organizationPlugin.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.organizationPlugin.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.organizationPlugin.actionset1.OrgActionControl"
+					actionType="generalAction"
+      		name="Organization Chart Plugin"
+		      description="Sample plugin for generating orginazation chart"
+					style="normal"
+          icon="icon/plugin_icon.png"
+          tooltip="Organization Chart"
+					toolbarPath="com.vp.plugin.sample.organizationPlugin.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.organizationPlugin.OrgAction"/>
+			</action>
+		</actionSet>
+
+	</actionSets>	
+</plugin>
